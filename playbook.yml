@@ -1,0 +1,15 @@
+- hosts: localhost
+  tasks:
+  - name: resize server
+    osops:
+      name: 'srv'
+      flavor: 'c3'
+      auth:
+        auth_url: 'AUTHURL'
+        project_name: 'admin'
+        username: 'USERNAME'
+        password: 'PASSWORD'
+        region_name: 'RegionOne'
+        user_domain_name: 'Default'
+        project_domain_name: 'Default'
+
